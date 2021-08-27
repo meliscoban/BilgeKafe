@@ -30,16 +30,16 @@ namespace BilgeKafe.UI
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.dgvSiparisler = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
+            this.dgvSiparisDetaylar = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSiparisler)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSiparisDetaylar)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -52,33 +52,15 @@ namespace BilgeKafe.UI
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.Controls.Add(this.label1);
-            this.splitContainer1.Panel1.Controls.Add(this.dataGridView1);
+            this.splitContainer1.Panel1.Controls.Add(this.dgvSiparisler);
             // 
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.label2);
-            this.splitContainer1.Panel2.Controls.Add(this.dataGridView2);
+            this.splitContainer1.Panel2.Controls.Add(this.dgvSiparisDetaylar);
             this.splitContainer1.Size = new System.Drawing.Size(784, 561);
-            this.splitContainer1.SplitterDistance = 261;
+            this.splitContainer1.SplitterDistance = 277;
             this.splitContainer1.TabIndex = 0;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 31);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(784, 227);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(0, 35);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(784, 261);
-            this.dataGridView2.TabIndex = 0;
             // 
             // label1
             // 
@@ -89,6 +71,18 @@ namespace BilgeKafe.UI
             this.label1.TabIndex = 1;
             this.label1.Text = "Siparişler";
             // 
+            // dgvSiparisler
+            // 
+            this.dgvSiparisler.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvSiparisler.BackgroundColor = System.Drawing.Color.White;
+            this.dgvSiparisler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSiparisler.Location = new System.Drawing.Point(0, 31);
+            this.dgvSiparisler.Name = "dgvSiparisler";
+            this.dgvSiparisler.Size = new System.Drawing.Size(784, 243);
+            this.dgvSiparisler.TabIndex = 0;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -97,6 +91,18 @@ namespace BilgeKafe.UI
             this.label2.Size = new System.Drawing.Size(133, 19);
             this.label2.TabIndex = 1;
             this.label2.Text = "Sipariş Detayları";
+            // 
+            // dgvSiparisDetaylar
+            // 
+            this.dgvSiparisDetaylar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvSiparisDetaylar.BackgroundColor = System.Drawing.Color.White;
+            this.dgvSiparisDetaylar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSiparisDetaylar.Location = new System.Drawing.Point(0, 35);
+            this.dgvSiparisDetaylar.Name = "dgvSiparisDetaylar";
+            this.dgvSiparisDetaylar.Size = new System.Drawing.Size(784, 245);
+            this.dgvSiparisDetaylar.TabIndex = 0;
             // 
             // GecmisSiparislerForm
             // 
@@ -114,8 +120,8 @@ namespace BilgeKafe.UI
             this.splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSiparisler)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSiparisDetaylar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -124,8 +130,8 @@ namespace BilgeKafe.UI
 
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvSiparisler;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dgvSiparisDetaylar;
     }
 }
