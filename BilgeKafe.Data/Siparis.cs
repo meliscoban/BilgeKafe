@@ -18,12 +18,14 @@ namespace BilgeKafe.Data
 
         public decimal ToplamTutar()
         {
-            decimal toplam = 0;
-            foreach (SiparisDetay detay in SiparisDetaylar)
-            {
-                toplam += detay.Tutar();
-            }
-            return toplam;
+            //decimal toplam = 0;
+            //foreach (SiparisDetay detay in SiparisDetaylar)
+            //{
+            //    toplam += detay.Tutar();
+            //}
+            //return toplam;
+
+            return SiparisDetaylar.Sum(x => x.Tutar());
         }
     }
 }
