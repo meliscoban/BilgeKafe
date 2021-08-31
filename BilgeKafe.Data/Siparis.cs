@@ -22,16 +22,15 @@ namespace BilgeKafe.Data
 
         public string ToplamTutarTL => $"{ToplamTutar():n2}₺";
 
-        public decimal ToplamTutar()
-        {
-            decimal toplam = 0;
-            foreach (SiparisDetay detay in SiparisDetaylar)
-            {
-                toplam += detay.Tutar();
-            }
-            return toplam;
-
-            // public decimal ToplamTutar() => SiparisDetaylar.Sum(sd => sd.Tutar());
-        }
+        public decimal ToplamTutar() => SiparisDetaylar.Sum(sd => sd.Tutar());
+        //public decimal ToplamTutar()
+        //{
+        //    decimal toplam = 0;
+        //    foreach (SiparisDetay detay in SiparisDetaylar)
+        //    {
+        //        toplam += detay.Tutar();
+        //    }
+        //    return toplam;
+        //}
     }
 }
