@@ -15,10 +15,13 @@ namespace BilgeKafe.Data
         public int Adet { get; set; }
 
         public string TutarTL { get { return $"{Tutar():n2}₺"; } }
+        // public string TutarTL => $"{Tutar():n2}₺";
+
 
         public decimal Tutar()
         {
             return Adet * BirimFiyat;
         }
+        // public decimal Tutar() => Adet * BirimFiyat;
     }
 }
