@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BilgeKafe.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,11 +13,29 @@ namespace BilgeKafe.UI
 {
     public partial class GecmisSiparislerForm : Form
     {
-        public GecmisSiparislerForm()
+        private readonly KafeVeri db;
+
+        public GecmisSiparislerForm(KafeVeri db)
         {
+            this.db = db;
             InitializeComponent();
+            dgvSiparisler.AutoGenerateColumns = false;
+            dgvSiparisDetaylar.AutoGenerateColumns = false;
+            dgvSiparisler.DataSource = db.GecmisSiparisler;
         }
 
-
+        private void dgvSiparisler_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dgvSiparisler.SelectedRows.Count != 1)
+            {
+                dgvSiparisDetaylar.DataSource = null;
+            }
+            else
+            {
+                DataGridViewRow satir = dgvSiparisler.SelectedRows[0];
+                Siparis siparis = (Siparis)satir.DataBoundItem;
+                dgvSiparisDetaylar.DataSource = siparis.SiparisDetaylar;
+            }
+        }
     }
 }

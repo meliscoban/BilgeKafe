@@ -30,8 +30,8 @@ namespace BilgeKafe.UI
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.ürünlerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.geçmişSiparişlerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiUrunler = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiGecmisSiparisler = new System.Windows.Forms.ToolStripMenuItem();
             this.lvwMasalar = new System.Windows.Forms.ListView();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -39,8 +39,8 @@ namespace BilgeKafe.UI
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ürünlerToolStripMenuItem,
-            this.geçmişSiparişlerToolStripMenuItem});
+            this.tsmiUrunler,
+            this.tsmiGecmisSiparisler});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(10, 3, 0, 3);
@@ -48,19 +48,20 @@ namespace BilgeKafe.UI
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // ürünlerToolStripMenuItem
+            // tsmiUrunler
             // 
-            this.ürünlerToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.ürünlerToolStripMenuItem.Name = "ürünlerToolStripMenuItem";
-            this.ürünlerToolStripMenuItem.Size = new System.Drawing.Size(75, 25);
-            this.ürünlerToolStripMenuItem.Text = "Ürünler";
+            this.tsmiUrunler.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.tsmiUrunler.Name = "tsmiUrunler";
+            this.tsmiUrunler.Size = new System.Drawing.Size(75, 25);
+            this.tsmiUrunler.Text = "Ürünler";
             // 
-            // geçmişSiparişlerToolStripMenuItem
+            // tsmiGecmisSiparisler
             // 
-            this.geçmişSiparişlerToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.geçmişSiparişlerToolStripMenuItem.Name = "geçmişSiparişlerToolStripMenuItem";
-            this.geçmişSiparişlerToolStripMenuItem.Size = new System.Drawing.Size(142, 25);
-            this.geçmişSiparişlerToolStripMenuItem.Text = "Geçmiş Siparişler";
+            this.tsmiGecmisSiparisler.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.tsmiGecmisSiparisler.Name = "tsmiGecmisSiparisler";
+            this.tsmiGecmisSiparisler.Size = new System.Drawing.Size(142, 25);
+            this.tsmiGecmisSiparisler.Text = "Geçmiş Siparişler";
+            this.tsmiGecmisSiparisler.Click += new System.EventHandler(this.tsmiGecmisSiparisler_Click);
             // 
             // lvwMasalar
             // 
@@ -99,7 +100,7 @@ namespace BilgeKafe.UI
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ListView lvwMasalar;
-        private System.Windows.Forms.ToolStripMenuItem ürünlerToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem geçmişSiparişlerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tsmiUrunler;
+        private System.Windows.Forms.ToolStripMenuItem tsmiGecmisSiparisler;
     }
 }

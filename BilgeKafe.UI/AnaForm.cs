@@ -67,6 +67,16 @@ namespace BilgeKafe.UI
             
             SiparisForm frmSiparis = new SiparisForm(db, siparis);
             frmSiparis.ShowDialog();
+
+            if (siparis.Durum != SiparisDurum.Aktif)
+            {
+                lvi.ImageKey = "bos";
+            }
+        }
+
+        private void tsmiGecmisSiparisler_Click(object sender, EventArgs e)
+        {
+            new GecmisSiparislerForm(db).ShowDialog();
         }
     }
 }
