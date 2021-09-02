@@ -31,7 +31,7 @@ namespace BilgeKafe.UI
             try
             {
                 string json = File.ReadAllText("veri.json"); // diskten okuma
-                db = JsonConvert.DeserializeObject<KafeVeri>(json); // jso deserialization
+                db = JsonConvert.DeserializeObject<KafeVeri>(json); // json deserialization
             }
             catch (Exception)
             {

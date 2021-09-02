@@ -301,6 +301,7 @@ namespace BilgeKafe.UI
             this.Font = new System.Drawing.Font("Microsoft New Tai Lue", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "SiparisForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Masa 3";
             ((System.ComponentModel.ISupportInitialize)(this.dgvSiparisDetaylari)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudAdet)).EndInit();
