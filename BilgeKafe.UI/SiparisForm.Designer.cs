@@ -29,7 +29,7 @@ namespace BilgeKafe.UI
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.btnDetayEkle = new System.Windows.Forms.Button();
             this.dgvSiparisDetaylari = new System.Windows.Forms.DataGridView();
@@ -110,8 +110,8 @@ namespace BilgeKafe.UI
             // Column2
             // 
             this.Column2.DataPropertyName = "BirimFiyat";
-            dataGridViewCellStyle1.Format = "0.00₺";
-            this.Column2.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Format = "0.00₺";
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle2;
             this.Column2.HeaderText = "Birim Fiyat";
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
@@ -200,6 +200,7 @@ namespace BilgeKafe.UI
             this.btnMasaTasi.TabIndex = 8;
             this.btnMasaTasi.Text = "TAŞI";
             this.btnMasaTasi.UseVisualStyleBackColor = true;
+            this.btnMasaTasi.Click += new System.EventHandler(this.btnMasaTasi_Click);
             // 
             // lblMasaNo
             // 
