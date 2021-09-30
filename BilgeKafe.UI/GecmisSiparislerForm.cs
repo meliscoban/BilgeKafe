@@ -21,7 +21,7 @@ namespace BilgeKafe.UI
             InitializeComponent();
             dgvSiparisler.AutoGenerateColumns = false;
             dgvSiparisDetaylar.AutoGenerateColumns = false;
-            dgvSiparisler.DataSource = db.GecmisSiparisler;
+            dgvSiparisler.DataSource = db.Siparisler.Where(x => x.Durum != SiparisDurum.Aktif).ToList();
         }
 
         private void dgvSiparisler_SelectionChanged(object sender, EventArgs e)
@@ -34,7 +34,7 @@ namespace BilgeKafe.UI
             {
                 DataGridViewRow satir = dgvSiparisler.SelectedRows[0];
                 Siparis siparis = (Siparis)satir.DataBoundItem;
-                dgvSiparisDetaylar.DataSource = siparis.SiparisDetaylar;
+                dgvSiparisDetaylar.DataSource = siparis.SiparisDetaylar.ToList();
             }
         }
     }

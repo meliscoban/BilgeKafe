@@ -77,7 +77,6 @@ namespace BilgeKafe.UI
             // dgvSiparisDetaylari
             // 
             this.dgvSiparisDetaylari.AllowUserToAddRows = false;
-            this.dgvSiparisDetaylari.AllowUserToDeleteRows = false;
             this.dgvSiparisDetaylari.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -99,6 +98,7 @@ namespace BilgeKafe.UI
             this.dgvSiparisDetaylari.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvSiparisDetaylari.Size = new System.Drawing.Size(474, 476);
             this.dgvSiparisDetaylari.TabIndex = 2;
+            this.dgvSiparisDetaylari.UserDeletingRow += new System.Windows.Forms.DataGridViewRowCancelEventHandler(this.dgvSiparisDetaylari_UserDeletingRow);
             // 
             // Column1
             // 
